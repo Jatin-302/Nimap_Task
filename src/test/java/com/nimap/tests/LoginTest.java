@@ -2,9 +2,11 @@ package com.nimap.tests;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -24,12 +26,12 @@ public class LoginTest{
         driver.manage().window().maximize();
         driver.get("https://testffc.nimapinfotech.com/");
     }
-    @AfterClass
-    public void Stop(){
-        if(driver!=null){
-            driver.quit();
-        }
-    }
+//    @AfterClass
+//    public void Stop(){
+//        if(driver!=null){
+//            driver.quit();
+//        }
+//    }
 
     public void login(String email,String password){
         driver.findElement(By.xpath("//*[@id='mat-input-0']")).sendKeys(email);
@@ -61,12 +63,27 @@ public class LoginTest{
                 {"jsony072@gmail.com","Jatin@731"}
         };
     }
+//    @Test
+//    public void testPunchIn() throws InterruptedException{
+//        Thread.sleep(5000);
+//        WebElement PunchBtn= driver.findElement(By.xpath("//button[@class=\"mat-focus-indicator buttonData punchBtn mat-raised-button mat-button-base mat-primary\"]"));
+//        PunchBtn.click();
+//        System.out.println(driver.getTitle());
+//    }
+
     @Test
-    public void testPunchIn() throws InterruptedException{
-        Thread.sleep(5000);
-        WebElement PunchBtn= driver.findElement(By.xpath("//button[@class=\"mat-focus-indicator buttonData punchBtn mat-raised-button mat-button-base mat-primary\"]"));
-        PunchBtn.click();
-        System.out.println(driver.getTitle());
+    public void testAddCustomer() throws InterruptedException{
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        WebElement myCustomers = wait.until(
+//                ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'My Customers')]"))
+//        );
+//        myCustomers.click();
+
+        Thread.sleep(10000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'My Customers')]")));
+        element.click();
+        driver.findElement(By.xpath("//span[contains(text(), \"New Customer\")]")).click();
     }
 
 
