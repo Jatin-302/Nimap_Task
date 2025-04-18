@@ -28,9 +28,11 @@ This section covers the **Automation Testing** tasks performed using **Selenium 
    ```bash
    git clone https://github.com/Jatin-302/Nimap_Task.git
 2. Navigate to the project:
+   ```bash
    cd Nimap_Task
    
-4. Run tests using Maven:
+3. Run tests using Maven:
+   ``` bash
    mvn clean test
 
 
