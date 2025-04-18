@@ -7,7 +7,7 @@ This section covers the **Automation Testing** tasks performed using **Selenium 
    - Valid credentials: Verify successful login and toast message.
    - Invalid credentials: Validate toast message error.
 
-2.  **Punch In **
+2.  **Punch In**
    - Verify & validthe Toast/Popup message after the PunchIn
    
 3. **Customer Addition**
