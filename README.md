@@ -23,7 +23,7 @@
 
 ### Sign In with OTP
 - Should only require email or mobile
-- Bug:  for moblie it's doesn't send the otp
+- Bug:  for moblie number it's doesn't send the otp
 
 ### Forgot Password
 - Blank input validation
