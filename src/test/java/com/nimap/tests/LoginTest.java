@@ -62,10 +62,9 @@ public class LoginTest{
         };
     }
     @Test
-    public void testPunchIn(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Puch In")));
-        WebElement PunchBtn= driver.findElement(By.partialLinkText("Puch In"));
+    public void testPunchIn() throws InterruptedException{
+        Thread.sleep(5000);
+        WebElement PunchBtn= driver.findElement(By.xpath("//button[@class=\"mat-focus-indicator buttonData punchBtn mat-raised-button mat-button-base mat-primary\"]"));
         PunchBtn.click();
         System.out.println(driver.getTitle());
     }
