@@ -36,13 +36,6 @@
 - Excel (for documenting test cases and bugs)
 """
 
-# Save the custom format README as a markdown file
-file_path_custom = "/mnt/data/README_Custom_Format.md"
-with open(file_path_custom, "w") as file:
-    file.write(readme_custom_format)
-
-file_path_custom
-
 # Nimap API Postman Test
 
 This project contains Postman tests for the NimapInfotech API.
