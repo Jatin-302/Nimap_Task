@@ -1,4 +1,40 @@
-# This project contains manual test cases and bug report.
+### 🧪 Automation Testing
+
+This section covers the **Automation Testing** tasks performed using **Selenium WebDriver**, **TestNG**, and **Maven** for the [Nimap Task Web Application](https://nimaptask.s3.amazonaws.com/index.html#).
+
+#### ✅ Test Cases Automated:
+1. **Login Functionality**
+   - Valid credentials: Verify successful login and toast message.
+   - Invalid credentials: Validate toast message error.
+
+2.  **Punch In **
+   - Verify & validthe Toast/Popup message after the PunchIn
+   
+3. **Customer Addition**
+   - After successful login, fill the customer form.
+   - Verify the customer is added to the list.
+
+#### 🛠️ Tech Stack:
+- **Language**: Java  
+- **Framework**: TestNG  
+- **Automation Tool**: Selenium WebDriver  
+- **Build Tool**: Maven  
+- **IDE**: IntelliJ IDEA 
+
+#### 📁 Project Structure:
+
+#### ⚙️ How to Run:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Jatin-302/Nimap_Task.git
+2. Navigate to the project:
+   cd Nimap_Task
+   
+4. Run tests using Maven:
+   mvn clean test
+
+
+# manual test cases and bug report.
 
 ## 🔧 Setup
 
